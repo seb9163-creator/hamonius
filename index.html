@@ -1,4 +1,6 @@
-<html lang="ko"><head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>hamonius — Handled to the End</title>
@@ -102,19 +104,19 @@ footer{padding:48px 60px;border-top:1px solid rgba(255,255,255,.08);display:flex
 @media(max-width:900px){nav{padding:0 24px;}.sec{padding:80px 24px;}.ab-grid,.ct-grid{grid-template-columns:1fr;gap:40px;}.sv-grid,.wk-grid{grid-template-columns:1fr;}.f-row{grid-template-columns:1fr;}footer{flex-direction:column;gap:16px;text-align:center;}}
 </style>
 </head>
-<body><div id="bar" style="opacity: 0; width: 0%;"></div>
+<body><div id="bar"></div>
 <nav>
   <a class="n-logo" onclick="goto('home')">hamo<span>.</span></a>
   <ul class="n-links">
-    <li><a data-page="home" onclick="goto('home')" class="act">Home</a></li>
+    <li><a data-page="home" onclick="goto('home')">Home</a></li>
     <li><a data-page="about" onclick="goto('about')">About</a></li>
     <li><a data-page="services" onclick="goto('services')">Services</a></li>
-    <li><a data-page="work" onclick="goto('work')" class="">Work</a></li>
+    <li><a data-page="work" onclick="goto('work')">Work</a></li>
     <li><a data-page="contact" onclick="goto('contact')">Contact</a></li>
   </ul>
   <button class="n-cta" onclick="goto('contact')">Get in Touch</button>
 </nav>
-<div id="page-home" class="page active" style="display: block;">
+<div id="page-home" class="page">
   <section class="h-hero">
     <div class="h-grid"></div><div class="h-blob1"></div><div class="h-blob2"></div>
     <div class="h-inner">
@@ -133,11 +135,11 @@ footer{padding:48px 60px;border-top:1px solid rgba(255,255,255,.08);display:flex
     </div>
   </section>
 </div>
-<div id="page-about" class="page" style="display: none;">
+<div id="page-about" class="page">
   <section class="sec">
     <div class="tag">About Us</div>
     <div class="ab-grid">
-      <div class="ab-visual rv-l on">
+      <div class="ab-visual rv-l">
         <div class="ab-accent"></div>
         <div class="ab-center-text">
           <div class="ab-big">H</div>
@@ -146,55 +148,59 @@ footer{padding:48px 60px;border-top:1px solid rgba(255,255,255,.08);display:flex
         </div>
       </div>
       <div>
-        <h2 class="sec-ttl rv on">끝까지 맡아<br>완성합니다.</h2>
-        <p class="sec-sub rv on">하모니어스(hamonius)는 이벤트 기획·운영, 감성 디자인, 영상 콘텐츠 제작을 아우르는 부산 기반 종합 에이전시입니다.</p>
+        <h2 class="sec-ttl rv">끝까지 맡아<br>완성합니다.</h2>
+        <p class="sec-sub rv">하모니어스(hamonius)는 이벤트 기획·운영, 감성 디자인, 영상 콘텐츠 제작을 아우르는 부산 기반 종합 에이전시입니다.</p>
         <div class="ab-items">
-          <div class="ab-item rv on"><div class="ab-icon">🎯</div><div><div class="ab-item-ttl">Mission</div><div class="ab-item-txt">모든 프로젝트를 처음부터 끝까지 책임지고 완성합니다.</div></div></div>
-          <div class="ab-item rv on"><div class="ab-icon">✨</div><div><div class="ab-item-ttl">Vision</div><div class="ab-item-txt">평범한 순간을 특별한 경험으로 전환합니다.</div></div></div>
-          <div class="ab-item rv on"><div class="ab-icon">📍</div><div><div class="ab-item-ttl">Location</div><div class="ab-item-txt">부산 해운대구 좌동로 166, 215호<br>대표: 서은비 CEO</div></div></div>
+          <div class="ab-item rv"><div class="ab-icon">🎯</div><div><div class="ab-item-ttl">Mission</div><div class="ab-item-txt">모든 프로젝트를 처음부터 끝까지 책임지고 완성합니다.</div></div></div>
+          <div class="ab-item rv"><div class="ab-icon">✨</div><div><div class="ab-item-ttl">Vision</div><div class="ab-item-txt">평범한 순간을 특별한 경험으로 전환합니다.</div></div></div>
+          <div class="ab-item rv"><div class="ab-icon">📍</div><div><div class="ab-item-ttl">Location</div><div class="ab-item-txt">부산 해운대구 좌동로 166, 215호<br>대표: 서은비 CEO</div></div></div>
         </div>
       </div>
     </div>
   </section>
 </div>
-<div id="page-services" class="page" style="display: none;">
+<div id="page-services" class="page">
   <section class="sec">
     <div class="tag">Services</div>
-    <h2 class="sec-ttl rv on">What We Do</h2>
-    <p class="sec-sub rv on">이벤트 실행부터 감성 디자인, 콘텐츠 프로덕션까지 — 하모니어스가 끝까지 함께합니다.</p>
+    <h2 class="sec-ttl rv">What We Do</h2>
+    <p class="sec-sub rv">이벤트 실행부터 감성 디자인, 콘텐츠 프로덕션까지 — 하모니어스가 끝까지 함께합니다.</p>
     <div class="sv-grid">
-      <div class="sv-card rv on"><div class="sv-num">01</div><div class="sv-icon">🎪</div><div class="sv-ttl">Event Execution</div><div class="sv-txt">기획부터 현장 운영, 사후 정산까지 모두 책임집니다.</div><ul class="sv-list"><li>기업 행사 기획·운영</li><li>론칭 이벤트·팝업 스토어</li><li>무대 연출·공간 구성</li><li>현장 스태프·사후 관리</li></ul></div>
-      <div class="sv-card rv on"><div class="sv-num">02</div><div class="sv-icon">🎨</div><div class="sv-ttl">Applied Design</div><div class="sv-txt">브랜드 아이덴티티에서 디지털 에셋까지 감각적인 비주얼로 빛나게 합니다.</div><ul class="sv-list"><li>브랜드 아이덴티티·BI</li><li>인쇄물·배너·사이니지</li><li>SNS·디지털 에셋</li><li>공간 그래픽·사인물</li></ul></div>
-      <div class="sv-card rv on"><div class="sv-num">03</div><div class="sv-icon">🎬</div><div class="sv-ttl">Content Production</div><div class="sv-txt">촬영, 편집, 유통까지 브랜드 스토리를 영상으로 담아 전달합니다.</div><ul class="sv-list"><li>브랜드 영상·광고 촬영</li><li>유튜브·SNS 콘텐츠</li><li>행사 현장 기록 영상</li><li>모션그래픽·포스트 프로덕션</li></ul></div>
+      <div class="sv-card rv"><div class="sv-num">01</div><div class="sv-icon">🎪</div><div class="sv-ttl">Event Execution</div><div class="sv-txt">기획부터 현장 운영, 사후 정산까지 모두 책임집니다.</div><ul class="sv-list"><li>기업 행사 기획·운영</li><li>론칭 이벤트·팝업 스토어</li><li>무대 연출·공간 구성</li><li>현장 스태프·사후 관리</li></ul></div>
+      <div class="sv-card rv"><div class="sv-num">02</div><div class="sv-icon">🎨</div><div class="sv-ttl">Applied Design</div><div class="sv-txt">브랜드 아이덴티티에서 디지털 에셋까지 감각적인 비주얼로 빛나게 합니다.</div><ul class="sv-list"><li>브랜드 아이덴티티·BI</li><li>인쇄물·배너·사이니지</li><li>SNS·디지털 에셋</li><li>공간 그래픽·사인물</li></ul></div>
+      <div class="sv-card rv"><div class="sv-num">03</div><div class="sv-icon">🎬</div><div class="sv-ttl">Content Production</div><div class="sv-txt">촬영, 편집, 유통까지 브랜드 스토리를 영상으로 담아 전달합니다.</div><ul class="sv-list"><li>브랜드 영상·광고 촬영</li><li>유튜브·SNS 콘텐츠</li><li>행사 현장 기록 영상</li><li>모션그래픽·포스트 프로덕션</li></ul></div>
     </div>
   </section>
 </div>
-<div id="page-work" class="page" style="display: none;">
+<div id="page-work" class="page">
   <section class="sec">
     <div class="tag">Our Work</div>
-    <h2 class="sec-ttl rv on">Portfolio</h2>
-    <p class="sec-sub rv on">하모니어스가 만든 순간들을 확인해보세요.</p>
-    <div class="wk-grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;"><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/XTVNqvXPP4c?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제10회 SW 융합해커톤 | UECO 입구아치 루핑영상</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/Zb_Vz30Z32w?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제4회 KDT 해커톤 | 시상식 루핑</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/WfI38ZwtMnc?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제10회 SW 융합해커톤 | 카운트 퍼포먼스</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/hvzGE_C78hI?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제4회 KDT 해커톤 | 수상영상_대상</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/n_rMqGzVstY?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제10회 SW 융합해커톤 | 오프닝영상</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/SFMytQNi__I?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제4회 KDT 해커톤 | 오프닝 영상</div></div></div><div class="wk-card rv on"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/XuLFfwpHjF0?rel=0" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><div class="wk-info"><div class="wk-cat">Event · Film</div><div class="wk-ttl">제10회 SW 융합해커톤 | 루핑영상</div></div></div></div>
+    <h2 class="sec-ttl rv">Portfolio</h2>
+    <p class="sec-sub rv">하모니어스가 만든 순간들을 확인해보세요.</p>
+    <div class="wk-grid">
+      <div class="wk-card rv"><div class="yt-wrap"><div class="yt-placeholder"><div class="yt-icon">▶</div><div class="yt-placeholder-txt">YouTube 영상 슬롯 #1</div></div></div><div class="wk-info"><div class="wk-cat">Event · Content</div><div class="wk-ttl">영상 제목이 여기에 표시됩니다</div></div></div>
+      <div class="wk-card rv"><div class="yt-wrap"><div class="yt-placeholder"><div class="yt-icon">▶</div><div class="yt-placeholder-txt">YouTube 영상 슬롯 #2</div></div></div><div class="wk-info"><div class="wk-cat">Design · Branding</div><div class="wk-ttl">영상 제목이 여기에 표시됩니다</div></div></div>
+      <div class="wk-card rv"><div class="yt-wrap"><div class="yt-placeholder"><div class="yt-icon">▶</div><div class="yt-placeholder-txt">YouTube 영상 슬롯 #3</div></div></div><div class="wk-info"><div class="wk-cat">Production · Film</div><div class="wk-ttl">영상 제목이 여기에 표시됩니다</div></div></div>
+    </div>
   </section>
 </div>
-<div id="page-contact" class="page" style="display: none;">
+<div id="page-contact" class="page">
   <section class="sec">
     <div class="tag">Contact</div>
     <div class="ct-grid">
       <div>
-        <h2 class="sec-ttl rv on">함께 시작해요.</h2>
-        <p class="sec-sub rv on">프로젝트 문의, 견적 요청, 협업 제안 — 무엇이든 편하게 연락주세요.</p>
+        <h2 class="sec-ttl rv">함께 시작해요.</h2>
+        <p class="sec-sub rv">프로젝트 문의, 견적 요청, 협업 제안 — 무엇이든 편하게 연락주세요.</p>
         <div class="ct-info">
-          <div class="ct-item rv on"><div class="ct-icon">📞</div><div><div class="ct-lbl">Phone</div><div class="ct-val">010-4785-9163</div></div></div>
-          <div class="ct-item rv on"><div class="ct-icon">✉️</div><div><div class="ct-lbl">Email</div><div class="ct-val">contact@hamonius.com</div></div></div>
-          <div class="ct-item rv on"><div class="ct-icon">🌐</div><div><div class="ct-lbl">Website</div><div class="ct-val">hamonius.kr</div></div></div>
-          <div class="ct-item rv on"><div class="ct-icon">📍</div><div><div class="ct-lbl">Address</div><div class="ct-val">부산 해운대구 좌동로 166, 215호</div></div></div>
+          <div class="ct-item rv"><div class="ct-icon">📞</div><div><div class="ct-lbl">Phone</div><div class="ct-val">010-4785-9163</div></div></div>
+          <div class="ct-item rv"><div class="ct-icon">✉️</div><div><div class="ct-lbl">Email</div><div class="ct-val">contact@hamonius.com</div></div></div>
+          <div class="ct-item rv"><div class="ct-icon">🌐</div><div><div class="ct-lbl">Website</div><div class="ct-val">hamonius.kr</div></div></div>
+          <div class="ct-item rv"><div class="ct-icon">📍</div><div><div class="ct-lbl">Address</div><div class="ct-val">부산 해운대구 좌동로 166, 215호</div></div></div>
         </div>
       </div>
-      <div class="rv-r on">
+      <div class="rv-r">
         <form class="ct-form" onsubmit="submitForm(event)">
-          <div class="f-row"><input class="f-inp" type="text" placeholder="이름 / Name" required=""><input class="f-inp" type="text" placeholder="회사명 / Company"></div>
-          <input class="f-inp" type="email" placeholder="이메일 / Email" required="">
+          <div class="f-row"><input class="f-inp" type="text" placeholder="이름 / Name" required><input class="f-inp" type="text" placeholder="회사명 / Company"></div>
+          <input class="f-inp" type="email" placeholder="이메일 / Email" required>
           <input class="f-inp" type="tel" placeholder="연락처 / Phone">
           <textarea class="f-inp" placeholder="문의 내용을 입력해주세요"></textarea>
           <button class="f-btn" type="submit">Send Message →</button>
